@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+	<!-- fill your code here-->
+	<body style="text-align:center" >
+		<h1>Marriage Validtor</h1>
+		<label for="bridge">Bridge's Age</label>
+		<input type="text" id="bridge">
+		<br>
+		<br>
+		<label for="grooms">Groom's Age</label>
+		<input type="text" id="grooms">
+		<br>
+		<br>
+		<button onclick="cal()">Validate</button><br><br>
+		<label id="result"></label>
+        <script>
+            function cal()
+            {
+                let a=document.getElementById("bridge").value;
+                let b=document.getElementById("grooms").value;
+                if(a>= 18 && b>=21)
+                {
+                    document.getElementById("result").innerHTML="Valid Marriage";
+                }
+                else
+                {
+                    document.getElementById("result").innerHTML="Invaid Marriage";
+                }
+            }
+            </script>
+	</body>
+</html>

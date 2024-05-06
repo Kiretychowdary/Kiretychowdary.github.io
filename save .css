@@ -1,0 +1,266 @@
+*{
+    padding:0px;
+    margin:0px;
+    /* text-decoration: Snone; */
+
+}
+li{
+    text-decoration: none;
+}
+.b_one
+{
+    color:red;
+    font-weight: 10px;
+    font-size: 40px;
+    position: absolute;
+    left:16px;
+    float: botttom;
+}
+.menu
+{
+    height:100%;
+    width:300px;
+    left: -400px;
+    background-color: rgba(255,255,255,0.1);
+    position: relative;
+    padding:50px;
+    transition: all 0.3s linear;
+}
+.sub_menu
+{
+   
+    width:200px;
+    height:300px;
+    top:10px;
+    padding:40px;
+    line-height:70px;
+}
+.menu .b_two{
+    position:relative;
+    float:right;
+    color:white;
+    /* cursor:progress; */
+    
+}
+.menu .logo a
+{
+    box-shadow: 0px 0px 0px 6px rgba(225,225, 125, 0.1);
+    position: absolute;
+    /* padding: 10px; */
+    /* height:100px */
+    text-decoration: none;
+}
+.menu .b_two span{
+    cursor:pointer;
+}
+.sub_menu li a{
+    text-decoration: none;
+    padding-left:20px;
+}
+.sub_menu li{
+    list-style: none;
+}
+.sub_menu i,a{
+    color:white;
+}
+.sub_menu li:hover{
+    background-color: rgba(255,255,255,0.1);
+    border-radius:10px 10px 10px 10px;
+}
+.b_two span:hover
+{
+    font-size:30px;
+}
+#check
+{
+    display: none;
+}
+#check:checked ~ .menu
+{
+    left:0;
+}
+/* .main
+{
+    position: absolute;
+} */
+#check:checked ~ .b_one
+{
+    opacity: 0;
+}
+
+/* .add{
+    position: absolute;
+    right: -100x;
+} */
+.nav
+{
+    display:flex;
+    width:100%;
+}
+.plus
+{
+
+    position: absolute;
+    bottom:200px;
+    float: right;
+    margin-left: 90%;
+    border-radius: 50%;
+}
+
+.box
+{
+    text-align:center;
+    margin:auto;
+    height: 40px;
+    width:70px;
+    justify-content: center;
+    padding-top:20px;
+    border: 1px solid black;
+    margin-left:100px;
+    margin-top:20px;
+    border-radius: 10px 10px 10px 10px;
+}
+.box:hover{
+    background-color: gray;
+}
+/* .nav{
+    flex-direction: row-;
+} */
+.box1
+{
+            text-align: center;
+            margin-top:300px;
+}
+input[type="text"]
+{
+        
+            border-radius:10px 10px 10px 10px; 
+}
+input:focus{
+            
+    color:lawngreen;
+    background-color: black;
+}
+.plus{
+    margin-top:500px;;
+    font-size:50px;
+    position: absolute;
+    top:10px;
+}
+.p1
+{
+    font-size: 80px;
+    position: absolute;
+    float: right;
+    left:90%;
+
+}
+#check1
+{
+    display: none;
+}
+
+.plus:hover{
+    transition: 0.2s;
+font-size:70px;
+cursor: pointer;
+}
+
+
+
+
+
+#container
+{
+    position: absolute;
+    top:100px;
+    height:400px;
+    width:600px;
+    left:400px;
+    background-color: black;
+    color:bisque;
+    border-radius:50px 100px;
+    text-align:center;
+    overflow: auto;
+    overflow-x:hidden;
+    white-space: nowrap;
+    
+    
+
+}
+.container::-webkit-scrollbar {
+    width: 5px; /* Set the width of the scrollbar */
+  }
+  
+#textin{
+    background-color: red;
+}
+
+.add{
+    position: absolute;
+    width:50%;
+    height:300px;
+    bottom:200px;
+    position:absolute;
+    right:-1000px;
+    background-color: rgba(225, 225, 225, 0.3);
+    border-radius:50px 30px;
+    transition: 2s;
+}
+#check1:checked ~ .add
+{
+    /* display: none; */
+    right:0;
+    /* opacity: 0; */
+}
+.b_close
+{
+    position: absolute;
+    right:20px;
+    padding: 10px;
+}
+span{
+    cursor: pointer;
+}
+.section 
+{
+    position:absolute;
+   padding:100px;
+   top:30px;
+   left:200px;
+   height:40px;
+   border-radius: 10px 10px 10px 10px;
+   /* background-color: black; */
+}
+#check1
+{
+    bottom:100px;
+}
+input[type="text"]
+{
+    border-radius: 10px 10px 10px 10px;
+}
+.b1
+{
+  
+    margin-left:60px;
+
+}
+#select1
+{
+    position: absolute;
+    bottom: 10px;
+    /* background-color: aqua; */
+    height: 100px;
+    margin-left:60%;
+}
+/* #check1:checked ~ .add
+{
+    display: none;
+} */
+
+
+.info button
+{
+    float:right;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <link rel="stylesheet" href="stylesheet1.css">
+    <title>Document</title>
+
+    <style>
+        .material-symbols-outlined {
+            cursor:pointer;
+            position: absolute;
+        
+         font-size:30px;
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+
+        /* .material-symbols-outlined:hover{
+            font-size: 3rem;
+
+
+        } */
+        #add
+        {
+            position: relative;
+            left:70%;
+            /* background-image:url(https://media.istockphoto.com/id/1447087371/photo/modern-abstract-dark-gray-background.jpg?s=2048x2048&w=is&k=20&c=CXhuom6B-q_wJHKQAfjTpETMyjTWbrt41b3HqmpY0NA=) */
+        }
+
+
+
+        </style>
+</head>
+<body style="transition:4s;background-color: darkslategrey;width: 100vw;object-fit: cover;">
+
+    <div class="b_one">
+        <label for="check">
+            <span class="material-symbols-outlined">
+                menu
+                </span>
+        </label>
+    </div>
+    <div id="container">
+            
+    </div>
+    <div class="main p">
+        <header class="nav">
+            <section class="box">All</section>
+            <section class="box">Personal</section>
+            <section class="box">Office</section>
+            <section class="box">Sports</section>
+        </header>
+        <input type="checkbox" id="check">
+        
+        <input type="checkbox" id="check3">
+    <!-- <div class="addbio">
+        <input type="text" id="bio" >
+        <br><br>
+        <button id="button2">Add</button>
+        <label for="check3" id="cross">
+            <span class="material-symbols-outlined">
+                cancel
+                </span>
+        </label>
+    </div> -->
+
+
+    <div class="menu">
+        <div class="logo">
+            <a href="#">RADHA KRISHNA</a>
+        </div>
+        <div class="b_two">
+            <label for="check">
+                <span class="material-symbols-outlined">
+                    close
+                    </span>
+            </label>
+        </div>
+        <div class="sub_menu">
+            <ul class="under">
+                <li>
+                    <img src="home_l.png" alt="hiofoir">
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <img src="profile.png" alt="hiofoir">
+                    <a href="#">PROFILE</a>
+                </li>
+                <li>
+                    <img src="setting_l.png" alt="hiofoir">
+                    <a href="#">SETTINGS</a>
+                </li>
+                <li>
+                    <img src="feedback.png" alt="hiofoir">
+                    <a href="#">FEEDBACK</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- <label for="check3" id="t"><span class="material-symbols-outlined">
+        add
+        </span></label> -->
+
+
+</div>
+<input type="checkbox" id="check1">
+
+<label for="check1" id="add">
+<span class="material-symbols-outlined tq">
+    note_add
+    </span>
+</label>
+
+    
+    <div class="textadd">
+        <input type="text"  id="info" placeholder="Enter The activity">
+        <br><br>
+        <button id="button1">Add</button>
+        <label for="check1" id="cross">
+        <span class="material-symbols-outlined">
+            close
+            </span>
+        </label>
+    </div>
+
+
+</body>
+<script>
+    const par=document.getElementById("container");
+    function display(){
+        const d=document.createElement("div");
+        let v=document.getElementById("info").value;
+        let n=document.createElement("section");
+        let i=document.createElement("button");
+        i.textContent="Remove";
+        i.id="innerbox";
+        n.textContent=v;
+        d.appendChild(n);
+        d.appendChild(i)
+        par.appendChild(d);
+        i.addEventListener("click",()=>
+{
+    const t=document.getElementById("innerbox");
+    d.remove();
+})
+        // par.appendChild(i);
+
+    }
+    document.getElementById("button1").addEventListener("click",display)
+
+    let b=document.querySelector(".nav");
+    function create()
+    {
+        const d=document.createElement("div");
+        const r=document.createElement("section");
+        let v=document.getElementById("button2").value;
+        r.style.width="70px";
+        r.style.height="40px";
+        r.className="box";
+        r.innerHTML=v;
+        r.style.textAlign="center";
+        r.style.margin="auto";
+        r.style.justifyContent="center";
+        r.style.borderRadius= "10px 10px";
+        r.style.border= "1px solid black";
+        r.style.paddingTop="20px";
+        r.bottom=0;
+        d.append(r);
+        // d.append(v);
+        b.appendChild(d);
+        document.getElementById("innerbox").addEventListener("click",()=>
+{
+    const t=document.getElementById("innerbox");
+    t.remove();
+})
+    }
+    // document.getElementById("button2").addEventListener("click",create)
+
+
+
+
+</script>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container
+        {
+            height:400px;
+            width:500px;
+            background-color: aliceblue;
+        }
+        .nav
+        {
+            display:flex;
+            width:100%;
+        }
+        *{
+    padding:0px;
+    margin:0px;
+    /* text-decoration: Snone; */
+
+}
+li{
+    text-decoration: none;
+}
+.b_one
+{
+    color:red;
+    font-weight: 10px;
+    font-size: 40px;
+    position: absolute;
+    left:16px;
+    float: botttom;
+}
+.menu
+{
+    height:100%;
+    width:300px;
+    left: -400px;
+    background-color: rgba(255,255,255,0.1);
+    position: relative;
+    padding:50px;
+    transition: all 0.3s linear;
+}
+.sub_menu
+{
+   
+    width:200px;
+    height:300px;
+    top:10px;
+    padding:40px;
+    line-height:70px;
+}
+.menu .b_two{
+    position:relative;
+    float:right;
+    color:white;
+    /* cursor:progress; */
+    
+}
+.menu .logo a
+{
+    box-shadow: 0px 0px 0px 6px rgba(225,225, 125, 0.1);
+    position: absolute;
+    /* padding: 10px; */
+    /* height:100px */
+    text-decoration: none;
+}
+.menu .b_two span{
+    cursor:pointer;
+}
+.sub_menu li a{
+    text-decoration: none;
+    padding-left:20px;
+}
+.sub_menu li{
+    list-style: none;
+}
+.sub_menu i,a{
+    color:white;
+}
+.sub_menu li:hover{
+    background-color: rgba(255,255,255,0.1);
+    border-radius:10px 10px 10px 10px;
+}
+.b_two span:hover
+{
+    font-size:30px;
+}
+#check
+{
+    display: none;
+}
+#check:checked ~ .menu
+{
+    left:0;
+}
+/* .main
+{
+    position: absolute;
+} */
+#check:checked ~ .b_one
+{
+    opacity: 0;
+}
+
+/* .add{
+    position: absolute;
+    right: -100x;
+} */
+#nav
+{
+    display:flex;
+    width:100%;
+}
+.plus
+{
+
+    position: absolute;
+    bottom:200px;
+    float: right;
+    margin-left: 90%;
+    border-radius: 50%;
+}
+.box
+{
+    text-align:center;
+    margin:auto;
+    height: 40px;
+    width:70px;
+    justify-content: center;
+    padding-top:20px;
+    border: 1px solid black;
+    margin-left:100px;
+    margin-top:20px;
+    border-radius: 10px 10
+}
+    </style>
+</head>
+<body>
+    <header id="nav">
+        <section class="box">All</section>
+        <section class="box">Personal</section>
+        <section class="box">Office</section>
+        <section class="box">Sports</section>
+    </header>
+    <button id="button2">clickme</button>
+    <div id="headerbox"></div>
+</body>
+<script>
+    let b=document.getElementById("nav");
+    function create()
+    {
+        const r=document.createElement("section");
+        r.style.width="70px";
+        r.style.height="40px";
+        r.className="box";
+        r
+        r.innerHTML="HII";
+        r.style.textAlign="center";
+        r.style.margin="auto";
+        r.style.justifyContent="center";
+        r.style.borderRadius= "10px 10px";
+        r.style.border= "1px solid black";
+        r.style.paddingTop="20px";
+        r.bottom=0;
+        r.style.backgroundColor="blue";
+        b.appendChild(r);
+    }
+    document.getElementById("button2").addEventListener("click",create)
+</script>
+</html>

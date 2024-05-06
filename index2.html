@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       .drop
+       {
+        display:inline-block;
+
+       }
+       .content
+       {
+        display:none;
+        background-color: rgba(blue, green, blue,0.2);
+        position:absolute;
+        min-width:15px;
+       }
+       .content a{
+        background-color: limegreen;
+       }
+       .drop:hover content a{
+        display:block;
+       }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="drop" style=" background-color: black;">
+        <button class="button">OPTIONS</button>
+        <div class="content">
+            <a href="Link.html">Menu</a>
+            <a href="Link.html">Home</a>
+            <a href="Link.html">Setting</a>
+        </div>
+</body>
+</html>

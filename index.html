@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -60,5 +60,564 @@
             <a href="Link.html">Setting</a>
         </div>
         </div> -->
+</body>
+</html>
+-->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            height:100vh;
+            width:100%;
+            background-color: #fff;
+            display: flex;
+            align-items:center;
+            justify-content:center;
+        }
+        .button
+        {
+            background-color: #d2d2d2;
+            width:200px;
+            height:100px;
+            border-radius:200px;
+            cursor:pointer;
+            position: relative;
+
+            }
+            .button::before
+            {
+                position: absolute;
+                content: '';
+                background-color: #fff;
+                width:90px;
+                height:90px;
+                border-radius: 200px;
+                margin:5px;
+            }
+            input:checked +.button{
+                background-color: blue;
+            }
+            input:checked+ .button::before
+            {
+               transform: translatex(100px);
+            }
+            input
+            {
+                display:none;
+            }
+            .img{
+                height:300px;
+                left:40%;
+                width:300px;
+                position: absolute;
+                margin:0;
+                top:30%;
+            }
+            img
+            {
+                height:300px;
+                width:300px;
+            }
+            button 
+            {
+            left:40%;
+                position: relative;
+             height:50px;
+             border-radius:10px;
+             width:90px;
+             background-color:aquamarine;
+            }
+            button:hover
+            {
+                background-color: red;;
+            }
+
+
+
+
+            body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at bottom,aqua 0%, #0c0d13 100%);
+  overflow: hidden;
+  
+}
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120%;
+  transform: rotate(-45deg);
+}
+
+.star {
+  --star-color: var(--primary-color);
+  --star-tail-length: 6em;
+  --star-tail-height: 2px;
+  --star-width: calc(var(--star-tail-length) / 6);
+  --fall-duration: 9s;
+  --tail-fade-duration: var(--fall-duration);
+  position: absolute;
+  top: var(--top-offset);
+  left: 0;
+  width: var(--star-tail-length);
+  height: var(--star-tail-height);
+  color: var(--star-color);
+  background: linear-gradient(45deg, currentColor, transparent);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 6px currentColor);
+  transform: translate3d(104em, 0, 0);
+  animation: fall var(--fall-duration) var(--fall-delay) linear infinite, tail-fade var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
+}
+@media screen and (max-width: 750px) {
+  .star {
+    animation: fall var(--fall-duration) var(--fall-delay) linear infinite;
+  }
+}
+.star:nth-child(1) {
+  --star-tail-length: 6.68em;
+  --top-offset: 46.66vh;
+  --fall-duration: 10.378s;
+  --fall-delay: 3.02s;
+}
+.star:nth-child(2) {
+  --star-tail-length: 5.31em;
+  --top-offset: 95.37vh;
+  --fall-duration: 8.676s;
+  --fall-delay: 9.489s;
+}
+.star:nth-child(3) {
+  --star-tail-length: 5.02em;
+  --top-offset: 24.8vh;
+  --fall-duration: 9.164s;
+  --fall-delay: 4.175s;
+}
+.star:nth-child(4) {
+  --star-tail-length: 5.38em;
+  --top-offset: 86.62vh;
+  --fall-duration: 10.133s;
+  --fall-delay: 8.462s;
+}
+.star:nth-child(5) {
+  --star-tail-length: 6.55em;
+  --top-offset: 9.68vh;
+  --fall-duration: 6.2s;
+  --fall-delay: 5.458s;
+}
+.star:nth-child(6) {
+  --star-tail-length: 5.26em;
+  --top-offset: 22.06vh;
+  --fall-duration: 6.989s;
+  --fall-delay: 8.989s;
+}
+.star:nth-child(7) {
+  --star-tail-length: 7.36em;
+  --top-offset: 66.79vh;
+  --fall-duration: 10.466s;
+  --fall-delay: 6.364s;
+}
+.star:nth-child(8) {
+  --star-tail-length: 6.29em;
+  --top-offset: 44.74vh;
+  --fall-duration: 6.359s;
+  --fall-delay: 9.074s;
+}
+.star:nth-child(9) {
+  --star-tail-length: 7.18em;
+  --top-offset: 49.14vh;
+  --fall-duration: 11.483s;
+  --fall-delay: 3.9s;
+}
+.star:nth-child(10) {
+  --star-tail-length: 6.98em;
+  --top-offset: 37.3vh;
+  --fall-duration: 7.324s;
+  --fall-delay: 7.636s;
+}
+.star:nth-child(11) {
+  --star-tail-length: 7.21em;
+  --top-offset: 49.25vh;
+  --fall-duration: 6.285s;
+  --fall-delay: 8.206s;
+}
+.star:nth-child(12) {
+  --star-tail-length: 7.41em;
+  --top-offset: 59.66vh;
+  --fall-duration: 6.21s;
+  --fall-delay: 2.039s;
+}
+.star:nth-child(13) {
+  --star-tail-length: 6.4em;
+  --top-offset: 52.32vh;
+  --fall-duration: 6.685s;
+  --fall-delay: 9.14s;
+}
+.star:nth-child(14) {
+  --star-tail-length: 5.11em;
+  --top-offset: 28.7vh;
+  --fall-duration: 11.28s;
+  --fall-delay: 8.125s;
+}
+.star:nth-child(15) {
+  --star-tail-length: 5.8em;
+  --top-offset: 95.13vh;
+  --fall-duration: 9.919s;
+  --fall-delay: 4.764s;
+}
+.star:nth-child(16) {
+  --star-tail-length: 5.94em;
+  --top-offset: 40.33vh;
+  --fall-duration: 6.719s;
+  --fall-delay: 1.86s;
+}
+.star:nth-child(17) {
+  --star-tail-length: 5.79em;
+  --top-offset: 9.07vh;
+  --fall-duration: 10.033s;
+  --fall-delay: 1.659s;
+}
+.star:nth-child(18) {
+  --star-tail-length: 5.82em;
+  --top-offset: 20.56vh;
+  --fall-duration: 8.703s;
+  --fall-delay: 0.705s;
+}
+.star:nth-child(19) {
+  --star-tail-length: 5.51em;
+  --top-offset: 33.07vh;
+  --fall-duration: 10.112s;
+  --fall-delay: 2.726s;
+}
+.star:nth-child(20) {
+  --star-tail-length: 5.18em;
+  --top-offset: 6.03vh;
+  --fall-duration: 8.299s;
+  --fall-delay: 5.771s;
+}
+.star:nth-child(21) {
+  --star-tail-length: 6.12em;
+  --top-offset: 82.19vh;
+  --fall-duration: 10.256s;
+  --fall-delay: 7.939s;
+}
+.star:nth-child(22) {
+  --star-tail-length: 5.82em;
+  --top-offset: 40.96vh;
+  --fall-duration: 9.862s;
+  --fall-delay: 4.21s;
+}
+.star:nth-child(23) {
+  --star-tail-length: 6.69em;
+  --top-offset: 35.78vh;
+  --fall-duration: 10.135s;
+  --fall-delay: 3.725s;
+}
+.star:nth-child(24) {
+  --star-tail-length: 6.07em;
+  --top-offset: 77.87vh;
+  --fall-duration: 6.566s;
+  --fall-delay: 5.193s;
+}
+.star:nth-child(25) {
+  --star-tail-length: 7.47em;
+  --top-offset: 77.51vh;
+  --fall-duration: 6.867s;
+  --fall-delay: 0.367s;
+}
+.star:nth-child(26) {
+  --star-tail-length: 5.05em;
+  --top-offset: 23.91vh;
+  --fall-duration: 9.215s;
+  --fall-delay: 0.165s;
+}
+.star:nth-child(27) {
+  --star-tail-length: 5.32em;
+  --top-offset: 8.16vh;
+  --fall-duration: 6.649s;
+  --fall-delay: 1.876s;
+}
+.star:nth-child(28) {
+  --star-tail-length: 6.91em;
+  --top-offset: 87.76vh;
+  --fall-duration: 11.974s;
+  --fall-delay: 7.914s;
+}
+.star:nth-child(29) {
+  --star-tail-length: 6.01em;
+  --top-offset: 3.74vh;
+  --fall-duration: 9.747s;
+  --fall-delay: 9.502s;
+}
+.star:nth-child(30) {
+  --star-tail-length: 7.06em;
+  --top-offset: 10.23vh;
+  --fall-duration: 6.013s;
+  --fall-delay: 6.713s;
+}
+.star:nth-child(31) {
+  --star-tail-length: 7.02em;
+  --top-offset: 81.74vh;
+  --fall-duration: 7.308s;
+  --fall-delay: 0.695s;
+}
+.star:nth-child(32) {
+  --star-tail-length: 5.5em;
+  --top-offset: 52.89vh;
+  --fall-duration: 9.005s;
+  --fall-delay: 6.976s;
+}
+.star:nth-child(33) {
+  --star-tail-length: 6.77em;
+  --top-offset: 68.51vh;
+  --fall-duration: 7.528s;
+  --fall-delay: 1.369s;
+}
+.star:nth-child(34) {
+  --star-tail-length: 5.49em;
+  --top-offset: 72.44vh;
+  --fall-duration: 10.3s;
+  --fall-delay: 6.901s;
+}
+.star:nth-child(35) {
+  --star-tail-length: 7.28em;
+  --top-offset: 58.92vh;
+  --fall-duration: 9.165s;
+  --fall-delay: 4.852s;
+}
+.star:nth-child(36) {
+  --star-tail-length: 5.33em;
+  --top-offset: 79.74vh;
+  --fall-duration: 9.946s;
+  --fall-delay: 5.722s;
+}
+.star:nth-child(37) {
+  --star-tail-length: 6.76em;
+  --top-offset: 88.39vh;
+  --fall-duration: 9.052s;
+  --fall-delay: 6.56s;
+}
+.star:nth-child(38) {
+  --star-tail-length: 6.12em;
+  --top-offset: 30.33vh;
+  --fall-duration: 10.883s;
+  --fall-delay: 9.85s;
+}
+.star:nth-child(39) {
+  --star-tail-length: 7.11em;
+  --top-offset: 42.11vh;
+  --fall-duration: 8.277s;
+  --fall-delay: 4.884s;
+}
+.star:nth-child(40) {
+  --star-tail-length: 6.45em;
+  --top-offset: 48.61vh;
+  --fall-duration: 11.082s;
+  --fall-delay: 3.422s;
+}
+.star:nth-child(41) {
+  --star-tail-length: 7.07em;
+  --top-offset: 35.78vh;
+  --fall-duration: 9.383s;
+  --fall-delay: 6.395s;
+}
+.star:nth-child(42) {
+  --star-tail-length: 6.74em;
+  --top-offset: 91.77vh;
+  --fall-duration: 7.847s;
+  --fall-delay: 8.072s;
+}
+.star:nth-child(43) {
+  --star-tail-length: 6.31em;
+  --top-offset: 81.38vh;
+  --fall-duration: 7.847s;
+  --fall-delay: 8.72s;
+}
+.star:nth-child(44) {
+  --star-tail-length: 5.22em;
+  --top-offset: 42.95vh;
+  --fall-duration: 6.947s;
+  --fall-delay: 5.487s;
+}
+.star:nth-child(45) {
+  --star-tail-length: 7.08em;
+  --top-offset: 84.41vh;
+  --fall-duration: 6.698s;
+  --fall-delay: 3.376s;
+}
+.star:nth-child(46) {
+  --star-tail-length: 6.18em;
+  --top-offset: 78.32vh;
+  --fall-duration: 6.809s;
+  --fall-delay: 3.333s;
+}
+.star:nth-child(47) {
+  --star-tail-length: 6.94em;
+  --top-offset: 57.24vh;
+  --fall-duration: 8.583s;
+  --fall-delay: 7.571s;
+}
+.star:nth-child(48) {
+  --star-tail-length: 6.64em;
+  --top-offset: 2.6vh;
+  --fall-duration: 6.048s;
+  --fall-delay: 7.237s;
+}
+.star:nth-child(49) {
+  --star-tail-length: 7.32em;
+  --top-offset: 88.03vh;
+  --fall-duration: 9.958s;
+  --fall-delay: 0.215s;
+}
+.star:nth-child(50) {
+  --star-tail-length: 7.33em;
+  --top-offset: 84.18vh;
+  --fall-duration: 8.93s;
+  --fall-delay: 5.358s;
+}
+.star::before, .star::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: calc(var(--star-width) / -2);
+  width: var(--star-width);
+  height: 100%;
+  background: linear-gradient(45deg, transparent, currentColor, transparent);
+  border-radius: inherit;
+  animation: blink 2s linear infinite;
+}
+.star::before {
+  transform: rotate(45deg);
+}
+.star::after {
+  transform: rotate(-45deg);
+}
+
+@keyframes fall {
+  to {
+    transform: translate3d(-30em, 0, 0);
+  }
+}
+@keyframes tail-fade {
+  0%, 50% {
+    width: var(--star-tail-length);
+    opacity: 1;
+  }
+  70%, 80% {
+    width: 0;
+    opacity: 0.4;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    opacity: 0.6;
+  }
+}
+
+
+.jersey-20-charted-regular {
+  font-family: "Jersey 20 Charted", sans-serif;
+  font-weight: 400;
+  font-size:70px;
+  color:aquamarine;
+  font-style: normal;
+}
+.jersey-15-regular {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Jersey+20+Charted&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: lightsteelblue;">
+    <div class="stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
+
+
+    <div class="img">
+        <h1><span class="jersey-20-charted-regular">Todo List</span></h1>
+    <img src="Write List.gif" alt="">
+    <!-- <button >Let's Get Create</button></div> --><form action="index.html"><button class="btn btn-outline-success" >Let's Start</button>
+    <!-- <input type="button" class="btn btn-outline-success" value="Submit" ></form> -->
+    <div style="height:100px;width:100px;">
+    <!-- <img src="fast-forward.gif"alt=""></div> -->
+    <!-- <div class="container">
+        <input type="checkbox" id="check5">
+        <label for="check5" class="button"></label>
+    </div> -->
 </body>
 </html>

@@ -8,6 +8,14 @@
     <title>Document</title>
 
     <style>
+        *{
+            margin:0;
+            padding:0;
+            /* background-image: url("krishnaloveshiva.jpeg") */
+            background-image: url("deer.jpg");
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
         .material-symbols-outlined {
             cursor:pointer;
             position: absolute;
@@ -19,7 +27,7 @@
           'GRAD' 0,
           'opsz' 24
         }
-
+        
         /* .material-symbols-outlined:hover{
             font-size: 3rem;
 
@@ -38,9 +46,61 @@
 </head>
 <body style="transition:4s;background-color: darkslategrey;width: 100vw;object-fit: cover;">
 
+
+    <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
     <div class="b_one">
         <label for="check">
-            <span class="material-symbols-outlined">
+            <span class="i1 material-symbols-outlined">
                 menu
                 </span>
         </label>
@@ -76,7 +136,7 @@
         </div>
         <div class="b_two">
             <label for="check">
-                <span class="material-symbols-outlined">
+                <span class="i2 material-symbols-outlined">
                     close
                     </span>
             </label>
@@ -141,17 +201,18 @@
         i.textContent="Remove";
         i.id="innerbox";
         n.textContent=v;
+        
         d.appendChild(n);
-        d.appendChild(i)
+        d.appendChild(i);
         par.appendChild(d);
         i.addEventListener("click",()=>
 {
     const t=document.getElementById("innerbox");
     d.remove();
-})
+})}
         // par.appendChild(i);
 
-    }
+    
     document.getElementById("button1").addEventListener("click",display)
 
     let b=document.querySelector(".nav");
